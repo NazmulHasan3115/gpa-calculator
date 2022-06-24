@@ -14,9 +14,22 @@
 
     <nav>
         <div class="container-fluid py-2 bg-white text-dark">
-            <span class="fs-3 fw-bold">GPA Calculator</span> (COT, National University, Bangladesh)
+            <div class="fs-3 fw-bold">GPA Calculator</div> 
+            (COT, National University, Bangladesh)
         </div>
     </nav>
+
+    <div id="contributors" class="bg-white p-2 rounded">
+        <a href="https://github.com/rir360" title="Rejwan Islam Rizvy" class="mb-2">
+            <img src="https://github.com/rir360.png" alt="Rejwan Islam Rizvy">
+        </a>
+        <a href="https://github.com/NazmulHasanNihal" title="Nazmul Hasan Nihal" class="mb-2">
+            <img src="https://github.com/NazmulHasanNihal.png" alt="NazmulHasanNihal">
+        </a>
+        <a href="https://github.com/SSP420" title="Sharmila Saha Puja">
+            <img src="https://github.com/SSP420.png" alt="Sharmila Saha Puja">
+        </a>
+    </div>
 
     
     <main>
@@ -121,7 +134,7 @@
                         </div>
                         <div class="input-group py-1">
                             <label for="lab2" class="input-group-text">Lab 2</label>
-                            <select name="lab2" class="form-control">
+                            <select name="lab2" class="form-control" required>
                                 <option value="0" selected>Choose Your Grade</option>
                                 <option value="4.00">A+</option>
                                 <option value="3.75">A</option>
@@ -135,13 +148,13 @@
                             </select>
                         </div>
                         <div class="d-grid py-2">
-                            <input class="btn btn-dark" type="submit" value="Calculate">
+                            <input class="btn btn-dark" type="submit" value="Calculate" required>
                         </div>
 
                     </div>
 
-                    <div class="col-md-5 d-flex align-items-center justify-content-center flex-column">
-                        <span>You Got</span>
+                    <div class="col-md-5 d-flex align-items-center justify-content-center flex-column py-5">
+                        <strong>You Got</strong>
                         <span class="display-1" id="final-gpa">0.00</span>
                     </div>
 
